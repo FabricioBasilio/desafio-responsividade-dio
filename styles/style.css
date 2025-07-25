@@ -1,0 +1,51 @@
+@import url("./reset.css");
+
+:root {
+    --cor1: #23272a;
+    --cor2: #ffffff;
+}
+
+/* Header */
+header {
+  background-image: url("../images/Header Background.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--cor2);
+  padding: 50px 20px 80px 20px;
+}
+
+.elementos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    gap: 20px;
+}
+
+header h1 {
+  font-family: "Luckiest Guy", cursive;
+  width: 280px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.botoes > button {
+  max-width: 381px;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+}
+
+.botoes > #botao-1 {
+    background-color: var(--cor2);
+    color: var(--cor1);
+
+}
+
+.botoes > #botao-2 {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
