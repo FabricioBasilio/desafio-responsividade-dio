@@ -17,8 +17,7 @@ header {
 .elementos-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: blue;
+    /* align-items: center; */
     gap: 20px;
 }
 
@@ -30,6 +29,7 @@ header h1 {
 .botoes {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .botoes > button {
@@ -37,6 +37,7 @@ header h1 {
   padding: 15px;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 
 .botoes > #botao-1 {
