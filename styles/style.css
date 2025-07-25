@@ -1,8 +1,8 @@
 @import url("./reset.css");
 
 :root {
-    --cor1: #23272a;
-    --cor2: #ffffff;
+  --cor1: #23272a;
+  --cor2: #ffffff;
 }
 
 /* Header */
@@ -15,15 +15,15 @@ header {
 }
 
 .elementos-header {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 header h1 {
   font-family: "Luckiest Guy", cursive;
   width: 280px;
+  font-size: 2rem;
 }
 
 .botoes {
@@ -33,7 +33,7 @@ header h1 {
 }
 
 .botoes > button {
-  max-width: 381px;
+  max-width: auto;
   padding: 15px;
   border-radius: 25px;
   border: none;
@@ -41,12 +41,41 @@ header h1 {
 }
 
 .botoes > #botao-1 {
-    background-color: var(--cor2);
-    color: var(--cor1);
-
+  background-color: var(--cor2);
+  color: var(--cor1);
 }
 
 .botoes > #botao-2 {
-    background-color: var(--cor1);
-    color: var(--cor2);
+  background-color: var(--cor1);
+  color: var(--cor2);
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px 80px 20px;
+}
+
+/* Main - seções */
+
+.primeira,
+.segunda,
+.terceira, .quarta {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
 }
