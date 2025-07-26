@@ -3,6 +3,7 @@
 :root {
   --cor1: #23272a;
   --cor2: #ffffff;
+  --cor3: #F6F6F6;
 }
 
 /* Header */
@@ -54,8 +55,9 @@ header h1 {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 50px 20px 80px 20px;
+  gap: 30px;
+  padding: 50px 0 80px 0;
+  align-items: center;
 }
 
 /* Main - seções */
@@ -63,10 +65,14 @@ main {
 .primeira,
 .segunda,
 .terceira, .quarta {
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  max-width: 90vw;
+}
+
+.segunda, .quarta {
+    background-color: var(--cor3);
 }
 
 .texto {
@@ -78,4 +84,9 @@ main {
 main h3 {
     font-weight: 800;
     font-size: 1.5rem;
+}
+
+main h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
 }
