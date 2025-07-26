@@ -129,4 +129,31 @@ footer {
   .botoes {
     flex-direction: row;
   }
+
+  /* Main */
+
+  /* Main - seções */
+  .primeira,
+  .segunda,
+  .terceira,
+  .quarta {
+    flex-direction: row;
+    align-items: center;
+    max-width: 970px;
+  }
+
+  .segunda,
+  .quarta {
+    flex-direction: row-reverse;
+  }
+
+  main h3,
+  main h2 {
+    max-width: 330px;
+    font-size: 2.5rem;
+  }
+
+  .texto p {
+    max-width: 350px;
+  }
 }
