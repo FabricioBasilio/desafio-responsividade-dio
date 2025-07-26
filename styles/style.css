@@ -3,7 +3,7 @@
 :root {
   --cor1: #23272a;
   --cor2: #ffffff;
-  --cor3: #F6F6F6;
+  --cor3: #f6f6f6;
 }
 
 /* Header */
@@ -25,7 +25,7 @@ header {
 
 header h1 {
   font-family: "Luckiest Guy", cursive;
-  width: 280px;
+  max-width: 280px;
   font-size: 2rem;
 }
 
@@ -65,14 +65,15 @@ main {
 /* Main - seções */
 
 main img {
-    max-width: 80%;
-    display: block;
-    margin: 0 auto;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 .primeira,
 .segunda,
-.terceira, .quarta {
+.terceira,
+.quarta {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -81,19 +82,20 @@ main img {
   padding: 40px 0 40px 0;
 }
 
-.segunda, .quarta {
-    background-color: var(--cor3);
+.segunda,
+.quarta {
+  background-color: var(--cor3);
 }
 
 .texto {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 main h3 {
-    font-weight: 800;
-    font-size: 1.5rem;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 main h2 {
@@ -104,11 +106,27 @@ main h2 {
 /* Footer */
 
 footer {
-    background-color: var(--cor1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 20px 25px 20px;
+  background-color: var(--cor1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 25px 20px;
 }
 
-/* TESTE: ESTE COMMIT ESTARÁ NA BRANCH RESPONSIVO NO REPOSITÓRIO REMOTO */
+@media screen and (min-width: 900px) {
+  /* Header */
+  .elementos-header {
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+    max-width: 320px;
+  }
+
+  .botoes {
+    flex-direction: row;
+  }
+}
