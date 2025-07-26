@@ -113,6 +113,10 @@ footer {
   padding: 20px 20px 25px 20px;
 }
 
+footer img {
+  max-width: 50%;
+}
+
 @media screen and (min-width: 900px) {
   /* Header */
   .elementos-header {
@@ -142,8 +146,7 @@ footer {
     max-width: 970px;
   }
 
-  .segunda,
-  .quarta {
+  .segunda {
     flex-direction: row-reverse;
   }
 
@@ -155,5 +158,29 @@ footer {
 
   .texto p {
     max-width: 350px;
+  }
+
+  .quarta {
+    flex-direction: column;
+    width: 810px;
+    text-align: center;
+  }
+
+  .quarta h2 {
+    max-width: 600px;
+  }
+
+  .quarta p {
+    max-width: 800px;
+  }
+
+  .quarta .texto {
+    align-items: center;
+  }
+
+  /* Footer */
+
+  footer img {
+    max-width: 100%;
   }
 }
